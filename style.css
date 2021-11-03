@@ -1,8 +1,27 @@
 body {
 
-    background-color: red;
+    background-image: url(./images/background-hojas.jpg);
+    background-size: 100% ;
+
 }
+
+#nav-bar {
+
+    position: absolute; 
+    top: 0;
+
+}
+
 #logo {
     width: 150px;
     height: 100px;
+}
+
+#search-icon {
+
+    border: 2pxsolid #1b1b1b;
+    color: #1b1b1b;
+    min-width: 60px;
+    padding: 6px 12px;
+
 }
