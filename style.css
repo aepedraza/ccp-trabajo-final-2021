@@ -1,9 +1,59 @@
 body {
 
-    background-image: url(./images/background-hojas.jpg);
+    background: #000;
+    columns: #fff; 
+    background-image: url(./images/pexels-tom-fisk-2283496.jpg);
     background-size: 100% ;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
 
 }
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+/**navegacion*/
+.nav-main{
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+}
+
+.nav-brand{
+    width: 80px;
+}
+
+/* lista de navegacion*/
+.nav-main ul{
+    display: flex;
+}
+
+.nav-main ul li{
+    padding: 20px;
+}
+
+.nav-main ul li a:hover{
+    border-bottom: 2px solid;
+}
+
+.nav-main ul.nav-menu{
+flex: 1;
+margin-left: 20px;
+}
+
+
 
 #nav-bar {
 
@@ -23,5 +73,6 @@ body {
     color: #1b1b1b;
     min-width: 60px;
     padding: 6px 12px;
+    
 
 }
