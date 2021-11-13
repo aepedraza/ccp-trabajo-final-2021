@@ -4,8 +4,8 @@ body {
     columns: #fff; 
     background-image: url(./images/pexels-tom-fisk-2283496.jpg );
     background-size: 100% ;
-    color: #fff;
-    font-size: 16px;
+    /*color: #fff;*/
+    font-size: 40px;
     font-family: 'Oswald', sans-serif;
 
 }
@@ -16,7 +16,9 @@ a{
 }
 ul{
     list-style: none;
-}
+    font-size: 40px;
+    position: relative;
+    }
 .container{
     width: 90%;
     margin: auto;
@@ -75,4 +77,10 @@ margin-left: 20px;
     padding: 6px 12px;
     
 
+}
+
+footer{
+    color: #e74755;
+    font-size: 20px;
+    position: relative;
 }
