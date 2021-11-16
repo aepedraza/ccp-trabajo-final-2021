@@ -16,7 +16,7 @@ a{
 }
 ul{
     list-style: none;
-    font-size: 40px;
+    font-size: 30px;
     position: relative;
     }
 .container{
@@ -55,13 +55,10 @@ flex: 1;
 margin-left: 20px;
 }
 
-
-
 #nav-bar {
 
     position: absolute; 
     top: 0;
-
 }
 
 #logo {
@@ -76,11 +73,77 @@ margin-left: 20px;
     min-width: 60px;
     padding: 6px 12px;
     
-
 }
 
 footer{
     color: #e74755;
     font-size: 20px;
     position: relative;
+}
+
+h1{
+    color: rgb(244, 244, 247);
+}
+
+#img1{
+    width: 330px; ;
+    height: 150px;
+    background-color: royalblue;
+}
+
+#img2{
+    width: 330px;
+    height: 150px;;
+    background: slateblue;
+}
+#textimg1{
+    align-items: flex-start;
+    width: 500px;
+    height: 150px;
+    background: royalblue;
+   
+}
+#textimg2{
+    display: auto;
+    width: 500px;
+    height: 150px;
+    background: slateblue;
+}
+.flex-container {
+    display: flex;
+    /*background-color: DodgerBlue;*/
+}
+.flex-container > div{
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    display: flex;
+
+}
+.flex-container2 {
+    display: flex;
+    
+  }
+  
+    
+.flex-container2 > div{
+    display: flex;
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+
+}
+.flex-container3{
+    display: flex;
+}
+.flex-container3 > div{
+    display: flex;
+    background-color: #f1f1f1;
+    width: 500px;
+    height: 150px;
+    margin: 10px;
+    /*padding: 20px;
+    font-size: 30px;*/
 }
