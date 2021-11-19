@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
@@ -7,27 +8,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
 <body>
   <header>
 
     <div class="container">
 
       <nav class="nav-main">
+        <img id="logo" src="./images/logomundoSinBG.png">
         <ul class="nav-menu">
           <li><a href="index.html">Inicio</a></li>
           <li><a href="ecocanjes-ecopuntos.html">EcoCanjes/EcoPuntos</a></li>
           <li><a href="canalesamigos.html">Canales Amigos</a></li>
           <li><a href="contactos.html">Contacto</a></li>
         </ul>
-        <input id="search-field" type="text" placeholder="Escriba lo que desea buscar..." >
-        <img id="logo" src="./images/logomundoSinBG.png">
+
+        <input id="search-field" type="text" placeholder="Escriba lo que desea buscar...">
+        <hr>
+        <button id="btn-buscar" class="btn btn-outline-success my-2 my-sm-0" type="button"
+          onclick="buscar()">Buscar</button>
+      </nav>
+    </div>
+
+    </div>
+  </header>
+
+
+  <main class="container">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-sm-12 col-md-6 color1 text-white alto">
+          <h1 class=" ">
+            Indicanos tus datos de contacto:
+          </h1>
+          <section class="espacio">
+            <form>
+              <div class="form-row">
 
                 <div class="form-group col-md-12">
-                  <label for="inputAddress2">Telefono</label>
+                  <label for="inputEmail4">Nombre*</label>
+                  <input type="name" class="form-control" id="inputEmail4" placeholder="Nombre">
+                </div>
+
+                <div class="form-group col-md-12">
+                  <label for="inputPassword4">Apellido*</label>
+                  <input type="password" class="form-control" id="inputPassword4" placeholder="Apellido">
+                </div>
+              </div>
+              <div class="form-row">
+
+                <div class="form-group col-md-12">
+                  <label for="Mail">Mail</label>
+                  <input type="mail" class="form-control" id="inputAddress" placeholder="Mail">
+                </div>
+
+                <div class="form-group col-md-12">
+                  <label for="inputAddress2">Teléfono</label>
                   <input type="number" class="form-control" id="inputAddress2" placeholder="Telefono">
                 </div>
               </div>
-              <div class = "form-group col-md-12">
+              <div class="form-group col-md-12">
                 <label>Provincia</label>
                 <select id="Provincia">
                   <option value="Buenos Aires">Buenos Aires</option>
@@ -54,34 +95,8 @@
                   <option value="Santiago del Estero">Santiago del Estero</option>
                   <option value="Tierra del Fuego">Tierra del Fuego</option>
                   <option value="Tucumán">Tucumán</option>
-                  <option value="Capital Federal">Capital Federal</option>
-                  <option value="Catamarca">Catamarca</option>
-                  <option value="Chaco">Chaco</option>
-                  <option value="Chubut">Chubut</option>
-                  <option value="Córdoba">Córdoba</option>
-                  <option value="Corrientes">Corrientes</option>
-                  <option value="Entre Ríos">Entre Ríos</option>
-                  <option value="Formosa">Formosa</option>
-                  <option value="Jujuy">Jujuy</option>
-                  <option value="La Pampa">La Rioja</option>
-                  <option value="La Rioja">La Rioja</option>
-                  <option value="Mendoza">Mendoza</option>
-                  <option value="Misiones">Misiones</option>
-                  <option value="Neuquén">Neuquén</option>
-                  <option value="Río Negro">Río Negro</option>
-                  <option value="Salta">Salta</option>
-                  <option value="San Juan">San Juan</option>
-                  <option value="San Luis">San Luis</option>
-                  <option value="Santa Cruz">Santa Cruz</option>
-                  <option value="Santa Fe">Santa Fe</option>
-                  <option value="Santiago del Estero">Santiago del Estero</option>
-                  <option value="Tierra del Fuego">Tierra del Fuego</option>
-                  <option value="Tucumán">Tucumán</option>
-                </select>
+                  </select>
               </div>
-              
-              
-              
               <div class="form-group col-md-12">
                 <label for="exampleFormControlTextarea1">Dejanos tu Comentario</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
@@ -90,82 +105,11 @@
           </section>
         </div>
 
-    </div>
-  </header>
-  <h1>COMPLETE EL FORMULARIO DE CONTACTO</h1>
-  <form id="form">
-    <label>Nombre</label>
-    <input type="text" id="nombre">
-    <br>
-    <label>Apellido</label>
-    <input type="text" id="apellido">
-    <br>
-    <label>Email</label>
-    <input type="text" id="email">
-    <br>
-    <label>Teléfono</label>
-    <input type="number" id="telefono">
-    <br>
-    <label>Provincia</label>
-    <select id="Provincia">
-      <option value="Buenos Aires">Buenos Aires</option>
-      <option value="Capital Federal">Capital Federal</option>
-      <option value="Catamarca">Catamarca</option>
-      <option value="Chaco">Chaco</option>
-      <option value="Chubut">Chubut</option>
-      <option value="Córdoba">Córdoba</option>
-      <option value="Corrientes">Corrientes</option>
-      <option value="Entre Ríos">Entre Ríos</option>
-      <option value="Formosa">Formosa</option>
-      <option value="Jujuy">Jujuy</option>
-      <option value="La Pampa">La Pampa</option>
-      <option value="La Rioja">La Rioja</option>
-      <option value="Mendoza">Mendoza</option>
-      <option value="Misiones">Misiones</option>
-      <option value="Neuquén">Neuquén</option>
-      <option value="Río Negro">Río Negro</option>
-      <option value="Salta">Salta</option>
-      <option value="San Juan">San Juan</option>
-      <option value="San Luis">San Luis</option>
-      <option value="Santa Cruz">Santa Cruz</option>
-      <option value="Santa Fe">Santa Fe</option>
-      <option value="Santiago del Estero">Santiago del Estero</option>
-      <option value="Tierra del Fuego">Tierra del Fuego</option>
-      <option value="Tucumán">Tucumán</option>
-      <option value="Capital Federal">Capital Federal</option>
-      <option value="Catamarca">Catamarca</option>
-      <option value="Chaco">Chaco</option>
-      <option value="Chubut">Chubut</option>
-      <option value="Córdoba">Córdoba</option>
-      <option value="Corrientes">Corrientes</option>
-      <option value="Entre Ríos">Entre Ríos</option>
-      <option value="Formosa">Formosa</option>
-      <option value="Jujuy">Jujuy</option>
-      <option value="La Pampa">La Rioja</option>
-      <option value="La Rioja">La Rioja</option>
-      <option value="Mendoza">Mendoza</option>
-      <option value="Misiones">Misiones</option>
-      <option value="Neuquén">Neuquén</option>
-      <option value="Río Negro">Río Negro</option>
-      <option value="Salta">Salta</option>
-      <option value="San Juan">San Juan</option>
-      <option value="San Luis">San Luis</option>
-      <option value="Santa Cruz">Santa Cruz</option>
-      <option value="Santa Fe">Santa Fe</option>
-      <option value="Santiago del Estero">Santiago del Estero</option>
-      <option value="Tierra del Fuego">Tierra del Fuego</option>
-      <option value="Tucumán">Tucumán</option>
-    </select>
-    <br>
-    <label>Mensaje</label>
-    <br>
-    <textarea id="textarea" class="form-control" value="" name="textarea" rows="10"></textarea>
-    <br>
-    <input type="submit" value="Enviar" id="submit-btn">
-  </form>
+      </div>
+  </main>
 
   <footer>
-    
+
     <img id='logo' src="./images/logomundoSinBG.png">
 
     <section class="social">
@@ -175,14 +119,15 @@
           <i class="fab fa-facebook-f"></i>
         </a>
         <a href="https://twitter.com">
-            <i class="fab fa-twitter"></i>
+          <i class="fab fa-twitter"></i>
         </a>
         <a href="https://Instagram.com">
-            <i class="fab fa-instagram"></i>
+          <i class="fab fa-instagram"></i>
         </a>
       </div>
     </section>
 
   </footer>
 </body>
+
 </html>
