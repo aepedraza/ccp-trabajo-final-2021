@@ -22,15 +22,18 @@
           <li><a href="canalesamigos.html">Canales Amigos</a></li>
           <li><a href="contactos.html">Contacto</a></li>
         </ul>
+
         <input id="search-field" type="text" placeholder="Escriba lo que desea buscar...">
         <hr>
         <button id="btn-buscar" class="btn btn-outline-success my-2 my-sm-0" type="button"
           onclick="buscar()">Buscar</button>
       </nav>
     </div>
+
+    </div>
   </header>
 
-   
+
   <main class="container">
     <div class="container">
 
@@ -61,11 +64,39 @@
                 </div>
 
                 <div class="form-group col-md-12">
-                  <label for="inputAddress2">Telefono</label>
+                  <label for="inputAddress2">Teléfono</label>
                   <input type="number" class="form-control" id="inputAddress2" placeholder="Telefono">
                 </div>
               </div>
-
+              <div class="form-group col-md-12">
+                <label>Provincia</label>
+                <select id="Provincia">
+                  <option value="Buenos Aires">Buenos Aires</option>
+                  <option value="Capital Federal">Capital Federal</option>
+                  <option value="Catamarca">Catamarca</option>
+                  <option value="Chaco">Chaco</option>
+                  <option value="Chubut">Chubut</option>
+                  <option value="Córdoba">Córdoba</option>
+                  <option value="Corrientes">Corrientes</option>
+                  <option value="Entre Ríos">Entre Ríos</option>
+                  <option value="Formosa">Formosa</option>
+                  <option value="Jujuy">Jujuy</option>
+                  <option value="La Pampa">La Pampa</option>
+                  <option value="La Rioja">La Rioja</option>
+                  <option value="Mendoza">Mendoza</option>
+                  <option value="Misiones">Misiones</option>
+                  <option value="Neuquén">Neuquén</option>
+                  <option value="Río Negro">Río Negro</option>
+                  <option value="Salta">Salta</option>
+                  <option value="San Juan">San Juan</option>
+                  <option value="San Luis">San Luis</option>
+                  <option value="Santa Cruz">Santa Cruz</option>
+                  <option value="Santa Fe">Santa Fe</option>
+                  <option value="Santiago del Estero">Santiago del Estero</option>
+                  <option value="Tierra del Fuego">Tierra del Fuego</option>
+                  <option value="Tucumán">Tucumán</option>
+                  </select>
+              </div>
               <div class="form-group col-md-12">
                 <label for="exampleFormControlTextarea1">Dejanos tu Comentario</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
