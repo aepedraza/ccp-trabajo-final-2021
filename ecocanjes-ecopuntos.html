@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Info de EcoCanjes/EcoPuntos</title>
+  <Link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <link rel="stylesheet" href="css/ecoCanjes.css">
 </head>
+
 <body>
   <header>
 
     <div class="container">
 
       <nav class="nav-main">
+        <img id="logo" src="./images/logomundoSinBG.png">
         <ul class="nav-menu">
           <li><a href="index.html">Inicio</a></li>
           <li><a href="ecocanjes-ecopuntos.html">EcoCanjes/EcoPuntos</a></li>
           <li><a href="canalesamigos.html">Canales Amigos</a></li>
           <li><a href="contactos.html">Contacto</a></li>
         </ul>
-        <input id="search-field" type="text" placeholder="Escriba lo que desea buscar..." >
-        <img id="logo" src="./images/logomundoSinBG.png">
-
+        <input id="search-field" type="text" placeholder="Escriba lo que desea buscar...">
+        <hr>
+        <button id="btn-buscar" class="btn btn-outline-success my-2 my-sm-0" type="button"
+          onclick="buscar()">Buscar</button>
       </nav>
 
     </div>
@@ -53,24 +59,28 @@
 
 
   <footer>
+
     
-    <img id='logo' src="./images/logomundoSinBG.png">
 
     <section class="social">
+      <img id='logo' src="./images/logomundoSinBG.png">
       <p>Redes sociales</p>
       <div class="links">
         <a href="https://facebook.com">
           <i class="fab fa-facebook-f"></i>
         </a>
         <a href="https://twitter.com">
-            <i class="fab fa-twitter"></i>
+          <i class="fab fa-twitter"></i>
         </a>
         <a href="https://Instagram.com">
-            <i class="fab fa-instagram"></i>
+          <i class="fab fa-instagram"></i>
         </a>
       </div>
     </section>
 
   </footer>
+
+  <script src="./js/ecocanje.js"></script>
 </body>
+
 </html>

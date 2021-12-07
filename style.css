@@ -81,13 +81,17 @@ h1{
 #img1{
     width: 330px; ;
     height: 150px;
-    background-color: royalblue;
+    /*background-color: royalblue;*/
+    background-image: url(./images/ecocanje-limpio-1140x477.jpg );
+    background-size: 100% ;
 }
 
 #img2{
     width: 330px;
     height: 150px;;
     background: slateblue;
+    background-image: url(./images/ecocanje.jpg );
+    background-size: 100% ;
 }
 #textimg1{
     align-items: flex-start;
@@ -104,6 +108,7 @@ h1{
 }
 .flex-container {
     display: flex;
+    box-sizing: border-box
     /*background-color: DodgerBlue;*/
 }
 .flex-container > div{
@@ -116,6 +121,7 @@ h1{
 }
 .flex-container2 {
     display: flex;
+    box-sizing: border-box
     
 }
 
@@ -123,22 +129,6 @@ footer{
     color: #e74755;
     font-size: 20px;
     position: relative;
-}
-
-h1{
-    color: rgb(244, 244, 247);
-}
-
-#img1{
-    width: 330px; ;
-    height: 150px;
-    background-color: royalblue;
-}
-
-#img2{
-    width: 330px;
-    height: 150px;;
-    background: slateblue;
 }
 #textimg1{
     align-items: flex-start;
