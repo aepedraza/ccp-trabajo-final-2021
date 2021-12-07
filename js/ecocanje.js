@@ -1,5 +1,13 @@
 const ecocanjes=[
-    {
+
+      {
+        nombre: "Seleccione un punto...",
+        direccion: "" ,
+        horario: "",
+        contacto: "",
+        url: "",
+      },
+      {
         nombre: "Nave Tierra",
         direccion: "Santa fe 1974",
         horario: "Lunes a viernes de 9 a 14hs.",
@@ -34,13 +42,55 @@ for (let index = 0; index < ecocanjes.length; index++) {
     select.appendChild(option);
 }
 
-const iframe= document.querySelector('iframe');
+const iframe = document.querySelector('iframe');
+const direccion = document.querySelector('direccion');
+const horario = document.querySelector('horario');
+const contacto = document.querySelector('contacto');
+const nombre = document.querySelector('nombre');
 
-function cambiarMapa(){
-    
-    let url=ecocanjes[select.value].url
-    iframe.src=url;
+
+function cambiarMapa() {
+  let url = ecocanjes[select.value].url
+  iframe.src = url;
+
 }
 
-select.addEventListener("change",cambiarMapa)
+function traer_datos() {
+  let direccion = ecocanjes[select.value].direccion
+  direccion.src = direccion;
+
+  var direccioneco = direccion;
+  var objetivo = document.getElementById('direccion');
+  objetivo.innerHTML = direccioneco;
+
+  let horario = ecocanjes[select.value].horario
+  horario.src = horario;
+
+  var horarioeco = horario;
+  var objetivo = document.getElementById('horario');
+  objetivo.innerHTML = horarioeco;
+
+  
+  let contacto = ecocanjes[select.value].contacto
+  contacto.src = contacto;
+
+  var contactoeco = contacto;
+  var objetivo = document.getElementById('contacto');
+  objetivo.innerHTML = contactoeco;
+}
+
+select.addEventListener("change", cambiarMapa)
+select.addEventListener("change", traer_datos)
+
+
+
+
+
+
+
+
+
+
+
+
 
